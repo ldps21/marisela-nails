@@ -2,9 +2,11 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
   font-family: "Roboto";
   margin: 0;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+  background: #f6f6f6;
 }
 
 nav label {
@@ -17,9 +19,17 @@ nav label {
 nav .btn {
   position: absolute;
   right: 10px;
-  top: 12px;
+  top: -2px;
   color: #000000;
   font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.active {
+  background: #f6f6f6;
 }
 
 .menu {
@@ -39,6 +49,8 @@ nav .btn {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
   /*.menuItem:nth-child(1) {
     border-top: 1px solid #333;
     margin-top: 10px;
@@ -57,8 +69,8 @@ nav .btn {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1000px) {
-  nav {
+@media screen and (min-width: 811px) {
+  .nav {
     margin-top: 0;
     height: 50px;
     display: -webkit-box;
@@ -68,10 +80,10 @@ nav .btn {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  nav label {
+  .nav label {
     margin-left: 10%;
   }
-  nav .menu {
+  .nav .menu {
     height: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -79,7 +91,7 @@ nav .btn {
             flex-direction: row;
     margin-right: 10%;
   }
-  nav .menu .menuItem {
+  .nav .menu .menuItem {
     border: none;
     margin-right: 20px;
     font-size: 20px;

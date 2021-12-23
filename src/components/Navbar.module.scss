@@ -5,22 +5,32 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba($color: #000000, $alpha: 0.2);
   font-family: $primary-font;
   margin: 0;
+  box-shadow: 0px 3px 5px rgba($color: #000, $alpha: 0.6);
+  background: rgba($color: #f6f6f6, $alpha: 1.0);
   label {
     font-size: 2.5rem;
     font-family: $logo-font;
     color: #333;
     margin-left: 15px;
   }
+
   .btn {
     position: absolute;
     right: 10px;
-    top: 12px;
+    top: -2px;
     color: #000000;
     font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
   }
+}
+
+.active {
+  background: rgba($color: #f6f6f6, $alpha: 1.0);
 }
 
 .menu {
@@ -31,6 +41,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: auto;
+  transition: height 0.4s ease-in-out;
   .menuItem {
     width: 100%;
     line-height: 15px;
@@ -48,8 +59,8 @@ nav {
   }*/
 }
 
-@media screen and (min-width: 1000px) {
-  nav {
+@media screen and (min-width: 811px) {
+  .nav {
     margin-top: 0;
     height: 50px;
     display: flex;

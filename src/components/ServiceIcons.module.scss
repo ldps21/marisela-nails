@@ -1,0 +1,35 @@
+$primary-font: "Roboto";
+
+.iconBox {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    font-family: $primary-font;
+    font-size: 44px;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.4);
+  }
+}
+
+.iconImg {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+}
+
+.nailPolish {
+  background-image: url("/src/img/service-icons/nail-polish.png");
+}
+.manicure {
+  background-image: url("/src/img/service-icons/manicure.png");
+}
+.nailDryer {
+  background-image: url("/src/img/service-icons/nail-dryer.png");
+}
+.pedicure {
+  background-image: url("/src/img/service-icons/pedicure.png");
+}

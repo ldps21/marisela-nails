@@ -11,4 +11,8 @@
   font-family: "Roboto";
   src: local("Roboto"), url(./fonts/Roboto-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay"), url(./fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
 

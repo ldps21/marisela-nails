@@ -1,0 +1,48 @@
+$primary-font: "Roboto";
+$secondary-font: "PlayfairDisplay";
+
+.card{
+    width: 100%;
+    height: 365px;
+    background-color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px #000;
+    text-decoration: none;
+    text-align: center;
+}
+.cardImg{
+    height: 232px;
+    background-color: blue;
+    background-size: 100%; 
+    background-repeat: no-repeat;
+}
+.manicure{
+    background-image: url(/src/img/card-img/manicure-card.jpg);
+    background-position: center;
+}
+.nailArt{
+    background-image: url(/src/img/card-img/nail-art-card.jpg);   
+}
+.ig{
+    background-image: url(/src/img/card-img/ig-card.jpg);
+    background-position: 0% 72%;
+}
+.cardText{
+    color: #fff;
+    
+    :first-child{
+        font-family: $secondary-font;
+        font-size: 48px;
+        text-shadow: 3px 3px 3px #000;
+    }
+    :nth-child(2){
+        font-family: $primary-font;
+        font-size: 36px;
+        
+        a{
+            color: #fff; 
+            font-size: 36px;
+            text-shadow: none;
+        }
+    }
+}
